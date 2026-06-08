@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       <section
-        className="relative overflow-visible bg-cover bg-center [clip-path:inset(-220px_0_0_0)] md:[clip-path:inset(-340px_0_0_0)]"
+        className="relative overflow-hidden bg-cover bg-center [clip-path:inset(-220px_0_0_0)] md:[clip-path:inset(-340px_0_0_0)]"
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgba(24,51,47,0.92), rgba(24,51,47,0.64)), url('https://cdn.pixabay.com/photo/2016/11/14/04/45/children-1822471_1280.jpg')",
@@ -234,7 +234,7 @@ export default function Home() {
         <Image
           src={gentleCareImage}
           alt="Teacher surrounded by smiling learners"
-          className="pointer-events-none absolute right-[-210px] top-1/2 z-0 h-[420px] w-auto -translate-y-1/2 object-contain opacity-95 drop-shadow-2xl sm:right-[-220px] md:bottom-[-96px] md:right-[-20%] md:top-auto md:h-[620px] md:translate-y-0 lg:h-[720px] xl:h-[820px]"
+          className="pointer-events-none absolute right-[-210px] top-1/2 z-0 hidden h-[420px] w-auto -translate-y-1/2 object-contain opacity-95 drop-shadow-2xl sm:block sm:right-[-220px] md:bottom-[-96px] md:right-[-20%] md:top-auto md:h-[620px] md:translate-y-0 lg:h-[720px] xl:h-[820px]"
           priority={false}
         />
         <div className="mx-auto grid min-h-[520px] max-w-7xl items-center gap-8 px-6 py-16 text-white sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10">
