@@ -167,17 +167,17 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.94, rotate: -2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ delay: 0.15, duration: 0.7, ease: "easeOut" }}
-            className="relative mx-auto aspect-square w-full max-w-[500px]"
+            className="relative mx-auto aspect-square w-full max-w-[500px] overflow-hidden"
           >
-            <div className="absolute inset-0 rounded-[32px] bg-[#2f9c95] shadow-2xl" />
-            <div className="absolute inset-5 grid place-items-center rounded-[28px] bg-[#fffaf0] p-8">
+            <div className="absolute inset-0 rounded-2xl bg-[#2f9c95] shadow-2xl sm:rounded-[32px]" />
+            <div className="absolute inset-3 grid place-items-center rounded-xl bg-[#fffaf0] p-3 sm:inset-5 sm:rounded-[28px] sm:p-8">
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="grid h-full w-full place-items-center rounded-[24px] border-4 border-dashed border-[#ee6f57] bg-white"
+                className="grid h-full w-full place-items-center overflow-hidden rounded-xl border-2 border-dashed border-[#ee6f57] bg-white p-3 sm:rounded-[24px] sm:border-4 sm:p-4"
               >
-                <div className="text-center">
-                  <div className="mx-auto mb-6 grid h-32 w-32 place-items-center rounded-full bg-white p-2 shadow-md sm:h-40 sm:w-40">
+                <div className="min-w-0 text-center">
+                  <div className="mx-auto mb-3 grid h-20 w-20 place-items-center rounded-full bg-white p-2 shadow-md min-[380px]:h-24 min-[380px]:w-24 sm:mb-6 sm:h-40 sm:w-40">
                     <Image
                       src={logo}
                       alt="Tiny Tots Witbank Academy logo"
@@ -187,10 +187,10 @@ export default function Home() {
                       priority
                     />
                   </div>
-                  <p className="text-2xl font-black text-[#18332f]">
+                  <p className="text-xl font-black leading-tight text-[#18332f] min-[380px]:text-2xl">
                     Learn. Play. Grow.
                   </p>
-                  <p className="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#69827c]">
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#69827c] sm:mt-3 sm:text-sm sm:tracking-[0.2em]">
                     Ages 2-6
                   </p>
                 </div>
